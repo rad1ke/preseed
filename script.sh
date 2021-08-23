@@ -1,7 +1,7 @@
 #!/bin/sh
 commandlist="wget gzip xorriso shasum md5sum"
 dir_extraction="extract"
-iso_vanilla_url="https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/debian-testing-amd64-netinst.iso"
+iso_vanilla_url="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.0.0-amd64-netinst.iso"
 iso_vanilla=$(basename $iso_vanilla_url)
 iso_vanilla_checksum_url=$(echo "$iso_vanilla_url" | sed "s/$iso_vanilla/SHA512SUMS/g")
 iso_preseed=$(echo "$iso_vanilla" | sed "s/.iso/-preseed.iso/g")
